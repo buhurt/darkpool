@@ -50,7 +50,7 @@ class AuthLog extends \yii\db\ActiveRecord
         $response = $client->createRequest()->setFormat(Client::FORMAT_JSON)->setMethod('get')->setUrl("https://suggestions.dadata.ru/suggestions/api/4_1/rs/iplocate/address?ip=$ip")->setHeaders([
                 'Content-Type' => 'application/json',
                 'Accept' => 'application/json',
-                'Authorization' => 'Token 5d51605789e67263618e608f574c112cea6d1d77',
+                'Authorization' => 'Token',
             ])->send();
         if ($response->data && !empty($response->data['location'])) {
             return $response->data['location']['unrestricted_value'] ?? null;

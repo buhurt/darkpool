@@ -75,7 +75,7 @@ $config = [
         'db' => $db,
         'telegram' => [
             'class' => 'aki\telegram\Telegram',
-            'botToken' => '5080071813:AAEJfSm3C8Zeec58zJ0wxeEcD4PxhY0M5OM',
+            'botToken' => '5082341813:AAEJfSm3C8DFZeec58zJ0wxeEcD4PSDFASfsdfxhY0M5OM',
         ],
         'assetManager' => [
             'appendTimestamp' => true,
